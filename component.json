@@ -1,6 +1,6 @@
 {
   "name": "xhrpoly",
-  "repository": "tipm/xhrpoly",
+  "repository": "bh5-ti/xhrpoly",
   "description": "Titanium XHR polyfill for Web Library Compatibility",
   "version": "1.0.0",
   "keywords": [],
