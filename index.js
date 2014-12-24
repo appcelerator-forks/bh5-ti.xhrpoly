@@ -3,7 +3,7 @@
  * compatible with web based XHR libraries
  */
 
-var Emitter = require('emitter');
+var Emitter = require('bh5-js/emitter');
 
 // Global Context
 
@@ -31,10 +31,10 @@ function XMLHttpRequest() {
   this._proxy =  Ti.Network.createHTTPClient();
   this.upload = {
     onprogress: function(){}
-  }
+  };
   this._proxy.onsendstream = function(e){
     self.upload.onprogress({loaded:e.progress, total:1});
-  }
+  };
 }
 
 XMLHttpRequest.prototype.__proto__ = Emitter.prototype;
